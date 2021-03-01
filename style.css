@@ -1,0 +1,146 @@
+body {
+  /* font-family: 'Andale Mono', serif; */
+  /* font-family: 'Space Mono', monospace; */
+  /* font-family: 'B612 Mono', monospace; */
+  /* font-family: 'Crimson Text', serif; */
+  /* font-family: 'Fira Mono', monospace; */
+  font-family: 'Roboto Mono', monospace;
+  /* font-family: 'EB Garamond'; */
+}
+
+#top li {
+  display: inline-block;
+  margin-right: 1em;
+  margin-left: 1.3rem;
+}
+
+#top ul {
+   list-style-type: none;
+   display: inline-block;
+   margin-top: 35px;
+ }
+
+#top a {
+  color: black;
+  text-decoration: none;
+}
+
+#top a:hover {
+  text-decoration: overline;
+}
+
+iframe {
+  left: 1rem;
+  width: calc(100% - 2rem);
+  height: calc(100% - 75px - 1rem);
+  position: absolute;
+}
+
+a {
+  color: black;
+  text-decoration: underline;
+}
+
+a:hover {
+  text-decoration: overline;
+}
+
+h1 {
+  float:left;
+  margin-left: 1rem;
+  font-weight: bold;
+}
+
+h6 {
+  margin-top: 1em;
+}
+.sounds img {
+  filter: grayscale(1);
+}
+.sounds img:hover {
+  filter: none;
+  transition-property: filter;
+  transition-duration: 1s;
+}
+
+.container {
+ margin: 0 auto;
+ max-width: 1200px;
+ padding: 0 1rem;
+}
+.responsive-image {
+  max-width: 100%;
+}
+.cell {
+  margin: 1rem;
+  /* margin-left: 1rem; */
+}
+.cell-text {
+  margin-left: 1rem;
+}
+.cell-text1 {
+  margin: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* .cell ReactPlayer { */
+ReactPlayer {
+  display: block;
+  left: 1rem;
+  width: 100%;
+  height: 100%;
+  /* position: absolute; */
+}
+.cell img {
+  display: block;
+  /* margin-left: 1rem; */
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 100%;
+}
+/* .cell-text {
+  width: 100%;
+} */
+@media screen and (min-width: 800px) {
+  .cell {
+    width: calc(100% - 2rem);
+  }
+  .cell-text {
+    width: calc(100% - 2rem);
+  }
+  .cell-text1 {
+    width: calc(100% - 2rem);
+  }
+  .responsive-image {
+    width: 100%;
+  }
+  #top h1 {
+    text-align: center;
+    font-weight: bold;
+  }
+  p {
+    /* font-size-adjust: 0.10; */
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cell {
+    width: calc(33.3333% - 2rem);
+  }
+  .cell-text {
+    width: calc(66% - 2rem);
+  }
+  .cell-text1 {
+    width: calc(33.3333% - 2rem);
+  }
+  #top h1 {
+    text-align: center;
+    font-weight: bold;
+  }
+  .responsive-image {
+    width: 100%;
+  }
+}
